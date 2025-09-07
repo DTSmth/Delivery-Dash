@@ -1,0 +1,82 @@
+# =============== #
+# Unity Generated #
+# =============== #
+
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+Obj/
+UserSettings/
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Crash Reports
+sysinfo.txt
+
+# ============= #
+# IDE Specific  #
+# ============= #
+
+# Visual Studio / Rider
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+.vscode/
+*.DotSettings.user
+
+# ============= #
+# OS Generated  #
+# ============= #
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ============= #
+# Build Outputs #
+# ============= #
+
+[Bb]in/
+[Oo]bj/
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.dll
+*.class
+*.jar
+*.dex
+
+# ============= #
+# Git LFS       #
+# ============= #
+
+# Track large asset types with Git LFS (optional)
+# Uncomment if using Git LFS
+# *.psd
+# *.png
+# *.jpg
+# *.fbx
+# *.wav
+# *.mp4
