@@ -9,6 +9,7 @@ public class Driver : MonoBehaviour
     [SerializeField] float currentSpeed = 5f;
     [SerializeField] float boostSpeed = 10f;
     [SerializeField] float regularSpeed = 5f;
+    bool hasBoost = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,8 +19,9 @@ public class Driver : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Boost"))
+        if (collision.CompareTag("Boost") && !hasBoost)
         {
+            hasBoost = true;
             currentSpeed = boostSpeed;
             Destroy(collision.gameObject);
         }
@@ -28,6 +30,7 @@ public class Driver : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         currentSpeed = regularSpeed;
+        hasBoost = false;
     }
 
     // Update is called once per frame
