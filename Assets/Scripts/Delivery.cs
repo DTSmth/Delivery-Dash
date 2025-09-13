@@ -19,6 +19,7 @@ public class Delivery : MonoBehaviour
             hasPackage = false;
             GetComponent<ParticleSystem>().Stop();
             Debug.Log("Dropped off wtih customer");
+            Destroy(collision.gameObject);
         }
     }
 }
